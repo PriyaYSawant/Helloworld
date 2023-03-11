@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Say hello from priya"
           command: "echo Hello, This is priya sawant"
 
 # Invoke jobs via workflows
@@ -23,4 +23,4 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - Hello, This is priya sawant
+      - say-hello
